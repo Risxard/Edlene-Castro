@@ -1,0 +1,252 @@
+.Contato-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    position: relative;
+
+    background: linear-gradient(to right, white 50%, var(--background-color-grey) 50%);
+
+    padding-bottom: 60px;
+}
+
+
+.Contato-inner {
+    width: 100%;
+    max-width: var(--column-width);
+    height: auto;
+    align-self: center;
+    position: relative;
+}
+
+
+.Contato-title-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+
+.Contato-title-container>div {
+    width: 50%;
+    height: clamp(40px, 16vw, 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.Contato-title-container>div h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+
+.Contato-title-container>div:first-child {
+    background-color: var(--background-color-grey);
+    border-end-start-radius: clamp(23px, 6vw, 80px);
+    padding-left: var(--margin-gap);
+    color: white;
+}
+
+.Contato-title-container>div:last-child {
+    border-end-end-radius: clamp(23px, 6vw, 80px);
+    background-color: white;
+    color: var(--background-color-grey);
+
+    padding-left: calc(var(--margin-gap) / 2);
+}
+
+
+
+.Contato-content {
+    display: flex;
+    flex-direction: row;
+    padding-inline: var(--margin-gap);
+
+    padding-block: var(--section-padding-top);
+}
+
+
+
+
+
+.Contato-content>div {}
+
+.Contato-content>div>div {
+    width: 50%;
+    height: auto;
+}
+
+
+
+.social-links {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(10px, 4.1vw, 40px);
+
+    padding-right: 60px;
+}
+
+
+
+
+
+.social-links a {
+    background-color: var(--background-color-green-2);
+
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links svg {
+    position: absolute;
+    align-self: center;
+    margin-top: -100%;
+
+    width: clamp(20px, 5vw, 40px);
+    height: clamp(20px, 5vw, 40px);
+
+    color: #398866;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    background-color: var(--background-color-green-1);
+}
+
+.social-links a:hover svg {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.contact-form {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+
+    position: relative;
+    margin-top: 100px;
+}
+
+.form-inner input {
+    height: 50px;
+    width: 350px;
+    margin-bottom: 3rem;
+    padding-inline: 1rem;
+    font-size: 28px;
+    color: #898989;
+    border: none;
+
+    background-color: #e8e8e8;
+}
+
+.form-inner input::placeholder {
+    color: #898989;
+}
+
+
+.form-text-area {}
+
+.form-text-area textarea {
+    resize: none;
+    width: 350px;
+    height: 180px;
+    color: #898989;
+    border: none;
+    padding-inline: 1rem;
+    padding-block: 8px;
+
+    font-size: 18px;
+    background-color: #e8e8e8;
+}
+
+.form-text-area textarea::placeholder {
+    color: #898989;
+    font-size: 28px;
+}
+
+.submit-button {
+    height: 40px;
+    width: 120px;
+    border: none;
+    font-size: 24px;
+    color: white;
+    background-color: var(--background-color-green-1);
+
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+
+@media (max-width: 1000px) {
+    .Contato-title-container>div {
+        width: 50%;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .social-links {
+        padding-right: clamp(20px, 6vw, 60px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 580px) {
+    .Contato-title-container>div h2 {
+        font-size: clamp(18px, 5vw, 28px);
+    }
+
+
+}
+
+
+
+@media (min-width: 580px) {
+    .Contato-title-container>div h2 {
+        font-size: clamp(28px, 4vw, 38px);
+    }
+
+
+}
+
+
+
+@media (min-width: 1000px) {
+
+
+    .Contato-title-container>div h2 {
+        font-size: 38px;
+    }
+}

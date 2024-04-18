@@ -1,0 +1,167 @@
+:root {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+
+    --font-color-green-1: #2f7457;
+
+    --background-color-grey: #d8d8d8;
+    --background-color-green-1: #56C796;
+    --background-color-green-2: #6EECB6;
+
+
+    --margin-gap-inner: 10px;
+    --column-width: 992px;
+    --nav-height: 60px;
+
+    --size-margin-title: clamp(2rem, 10vw, 5rem);
+
+
+    --margin-gap: 130px;
+
+
+    --background-color-bio-outside: #d8d8d8;
+    --background-color-bio-inside: #e5e5e5;
+
+    --section-padding-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.title-faixa-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.title-faixa-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    max-width: var(--column-width);
+    width: 100%;
+}
+
+.title-faixa-container .title-faixa-inner .faixa-1, .faixa-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+
+    height: clamp(35px, 10vw, 120px);
+}
+
+
+.title-faixa-container .title-faixa-inner .faixa-1 {
+    justify-content: flex-start;
+    padding-left: var(--margin-gap);
+}
+
+.title-faixa-container .title-faixa-inner .faixa-1 {
+    border-end-end-radius: clamp(23px, 6vw, 80px);
+}
+
+.title-faixa-container .title-faixa-inner .faixa-2 {
+    justify-content: flex-start;
+    padding-left: var(--size-margin-title);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 580px) {
+    .faixa-1>h2 {
+        font-size: clamp(14px, 1vw, 28px);
+    }
+}
+
+
+
+@media (min-width: 580px) {
+    .faixa-1>h2 {
+        font-size: clamp(28px, 4vw, 38px);
+    }
+
+
+}
+
+
+@media (min-width: 1000px) {
+    .faixa-1>h2 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --margin-gap: clamp(40px, 10vw, 130px);
+
+        --section-padding-top: clamp(30px, 10vw, 100px);
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    :root {
+        --title-big-margin-bottom: 20px;
+    }
+}
+
+
+
+@media (min-width: 480px) {
+    :root {
+
+        --title-big-margin-bottom: 25px;
+    }
+}
+
+
+@media (min-width: 600px) {
+    :root {}
+}
+
+@media (min-width: 780px) {
+    :root {
+        --title-big-margin-bottom: 40px;
+    }
+}
+
+
+@media (min-width: 880px) {
+    :root {}
+
+}
+
+
+@media (min-width: 1000px) {
+    :root {
+        --title-big-margin-bottom: 50px;
+    }
+}
